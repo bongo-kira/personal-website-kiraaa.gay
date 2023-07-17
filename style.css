@@ -1,7 +1,7 @@
 html, body {
     font-size: 20px;
-    color: #F5F5F5;
-    background-color: #353839;
+    color: #E09DAA;
+    background-color: #FFF7F9;
     font-family: "Lucida Console";
 }
 
@@ -14,17 +14,17 @@ main {
 a { 
     text-decoration: underline wavy; 
     text-decoration-thickness: 2px; 
-    color: #FCB0BF;
+    color: #E09DAA;
     cursor: pointer;
     transition: .1s filter ease-in-out;
 }
 
 a:hover {
-    filter: brightness(150%);
+    filter: brightness(50%);
 }
 
 h1 a {
-    color: #F5F5F5;
+    color: #A8757F;
     text-decoration: none;
 }
 
@@ -51,8 +51,8 @@ ul.links li {
   }
 
   img {
-    border: 5px solid #232b2b;
-    background-color: #0e1111;
+    border: 5px solid #FEEDF0;
+    background-color: #FDCAD4;
     border-radius: 4px;
     padding: 5px;
     display: block;
