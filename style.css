@@ -20,7 +20,8 @@ a {
 }
 
 a:hover {
-    filter: brightness(50%);
+    filter: brightness(25%);
+    filter: drop-shadow(5px 5px 10px currentColor)
 }
 
 h1 a {
