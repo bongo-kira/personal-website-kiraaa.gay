@@ -8,12 +8,22 @@
   <title>kira and her website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="/assets/trans-rights.png">
+  <script src="script.js"></script>
 </head>
 
 <body>
   <main>
     <div class="inner">
-      <h1><a href="/">kira and her website</a></h1>
+      <h1><a href="/">kira and her website</a>
+        <div class="theme-btn">
+          <button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+          <img src="/assets/light-mode-icon.png" alt="sun" style="border: none; background-color: transparent;">
+          </button>
+          <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+          <img src="/assets/dark-mode-icon.png"  alt="moon" style="border: none; background-color: transparent;">
+          </button>
+        </div>
+      </h1>
       <ul class="links">
         <li><a href="aboutme.html">who am i?</a></li>
         <li><a href="links.html">links n stuff</a></li>
