@@ -1,9 +1,7 @@
-body {
-    font-size: 20px;
-    font-family: "Lucida Console";
-    transition: all .5s ease-in-out;
-    background-color: var(--bg-colour);
-    color: var(--text-colour);
+@font-face {
+  /*made by https://github.com/MeguminSama */
+  font-family: "megufont";
+  src: url(assets/Megufont-Regular.ttf);
 }
 
 :root,
@@ -11,35 +9,47 @@ body {
       --bg-colour: #FFF7F9;
       --text-colour: #E09DAA;
       --h1-colour: #A8757F;
+      --h1-colour-gradient: #353839;
       --brightness: 75%;
       --image-border: #FEEDF0;
       --image-fill: #FDCAD4;
+      --drop-shadow-glow: 20px;
     }
 
     :root.dark {
       --bg-colour: #353839;
       --text-colour: #FEE4E9;
       --h1-colour: #FCB9C6;
+      --h1-colour-gradient: #FFF7F9;
       --brightness: 150%;
       --image-border: #232B2B;
       --image-fill: #0E1111;
+      --drop-shadow-glow: 10px;
     }
+
+body {
+    font-size: 34px;
+    font-family: megufont, sans-serif;
+    transition: all .5s ease-in-out;
+    background-color: var(--bg-colour);
+    color: var(--text-colour);
+  }
 
 a {
     text-decoration: underline wavy; 
     text-decoration-thickness: 2px; 
     color: var(--text-colour);
     cursor: pointer;
-    transition: all .25s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 a:hover {
     transition: all .1s ease-in-out;
-    filter: brightness(var(--brightness)) drop-shadow(0px 0px 10px);
+    filter: brightness(var(--brightness)) drop-shadow(0px 0px var(--drop-shadow-glow));
 }
 
 h1 a {
-    transition: all .25s ease-in-out;
+    transition: all .5s ease-in-out;
     color: var(--h1-colour);
     text-decoration: none;
 }
@@ -51,10 +61,10 @@ main {
 }
 
 .inner {
-    width: 60%;
+    width: 50%;
     margin-top: 5%;
     display: inline-block;
-    text-align: left;
+    text-align: center;
   }
 
 ul.links {
@@ -105,8 +115,12 @@ img {
   background-color: var(--image-fill);
   border-radius: 4px;
   padding: 5px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  display: inline-block;
+  width: 20%;
+}
+
+.image-full {
+  width: 100%;
 }
